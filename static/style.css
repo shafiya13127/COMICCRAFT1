@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    background: #f4f1ff;
+
+    color: #201b2c;
+}
+
+
+.container {
+
+    width:
+        min(1000px, 92%);
+
+    margin:
+        0 auto;
+
+    padding:
+        40px 0 70px;
+}
+
+
+.hero {
+
+    text-align: center;
+
+    margin-bottom: 24px;
+}
+
+
+.badge {
+
+    display: inline-block;
+
+    padding:
+        8px 14px;
+
+    border-radius:
+        999px;
+
+    background:
+        #e9e1ff;
+
+    font-weight:
+        700;
+
+    font-size:
+        13px;
+}
+
+
+h1 {
+
+    font-size:
+        clamp(32px, 6vw, 56px);
+
+    margin:
+        14px 0 8px;
+}
+
+
+.hero p {
+
+    color:
+        #6d657a;
+
+    font-size:
+        18px;
+}
+
+
+.card {
+
+    background:
+        white;
+
+    border-radius:
+        20px;
+
+    padding:
+        28px;
+
+    box-shadow:
+        0 10px 35px
+        rgba(30, 20, 60, .10);
+
+    margin-bottom:
+        24px;
+}
+
+
+label {
+
+    display:
+        block;
+
+    font-weight:
+        700;
+
+    margin:
+        14px 0 8px;
+}
+
+
+textarea,
+select {
+
+    width:
+        100%;
+
+    border:
+        1px solid #d8d1e4;
+
+    border-radius:
+        12px;
+
+    padding:
+        13px;
+
+    font:
+        inherit;
+
+    background:
+        white;
+}
+
+
+textarea {
+
+    min-height:
+        140px;
+
+    resize:
+        vertical;
+}
+
+
+.grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        14px;
+}
+
+
+button {
+
+    border:
+        0;
+
+    border-radius:
+        12px;
+
+    padding:
+        14px 20px;
+
+    margin-top:
+        20px;
+
+    background:
+        #5d35d5;
+
+    color:
+        white;
+
+    font-weight:
+        800;
+
+    cursor:
+        pointer;
+}
+
+
+button:disabled {
+
+    opacity:
+        .6;
+
+    cursor:
+        wait;
+}
+
+
+.status {
+
+    margin-top:
+        15px;
+
+    min-height:
+        24px;
+}
+
+
+.panel {
+
+    border:
+        1px solid #e4deeb;
+
+    border-radius:
+        16px;
+
+    padding:
+        20px;
+
+    margin:
+        16px 0;
+
+    background:
+        #fcfbff;
+}
+
+
+.panel h3 {
+
+    margin-top:
+        0;
+}
+
+
+.meta {
+
+    color:
+        #746b80;
+
+    font-size:
+        14px;
+}
+
+
+.dialogue {
+
+    margin:
+        8px 0;
+
+    padding:
+        10px 12px;
+
+    border-left:
+        4px solid #5d35d5;
+
+    background:
+        #f1edff;
+
+    border-radius:
+        8px;
+}
+
+
+.hidden {
+
+    display:
+        none;
+}
+
+
+@media (max-width: 700px) {
+
+    .grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .card {
+
+        padding:
+            20px;
+
+    }
+}

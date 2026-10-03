@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ComicCraft AI</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+<body>
+
+<main class="container">
+
+    <section class="hero">
+
+        <div class="badge">
+            ✨ AI COMICCRAFT
+        </div>
+
+        <h1>
+            Create Your Comic Story
+        </h1>
+
+        <p>
+            Turn your idea into a complete
+            panel-by-panel comic.
+        </p>
+
+    </section>
+
+
+    <section class="card">
+
+        <form id="comicForm">
+
+            <label for="prompt">
+                Story Prompt
+            </label>
+
+            <textarea
+                id="prompt"
+                required
+                maxlength="2000"
+                placeholder="Example: A student discovers a mysterious book in the college library..."
+            ></textarea>
+
+
+            <div class="grid">
+
+                <div>
+
+                    <label for="style">
+                        Comic Style
+                    </label>
+
+                    <select id="style">
+
+                        <option>Adventure</option>
+
+                        <option>Funny</option>
+
+                        <option>Fantasy</option>
+
+                        <option>Mystery</option>
+
+                        <option>School Life</option>
+
+                        <option>Science Fiction</option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label for="language">
+                        Language
+                    </label>
+
+                    <select id="language">
+
+                        <option>English</option>
+
+                        <option>Tamil</option>
+
+                        <option>Malayalam</option>
+
+                        <option>Hindi</option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label for="panels">
+                        Number of Panels
+                    </label>
+
+                    <select id="panels">
+
+                        <option value="3">
+                            3
+                        </option>
+
+                        <option value="4">
+                            4
+                        </option>
+
+                        <option
+                            value="5"
+                            selected
+                        >
+                            5
+                        </option>
+
+                        <option value="6">
+                            6
+                        </option>
+
+                        <option value="7">
+                            7
+                        </option>
+
+                        <option value="8">
+                            8
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="generateBtn"
+                type="submit"
+            >
+                Generate Comic
+            </button>
+
+        </form>
+
+
+        <div
+            id="status"
+            class="status"
+        ></div>
+
+    </section>
+
+
+    <section
+        id="result"
+        class="result hidden"
+    ></section>
+
+</main>
+
+
+<script src="/static/app.js"></script>
+
+</body>
+
+</html>
